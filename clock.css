@@ -5,14 +5,14 @@
 .div1{
     height: 100vh;
     width: 100%;
-    background-color: aquamarine;
+    background-color: rgb(9, 116, 81);
     font-family: 'Courier New', Courier, monospace;
     float: left;
 
 }
 .clock{
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     background-color: blue;
     border: 20px solid blue;
     border-radius: 50%;
@@ -61,7 +61,7 @@
     display: block;
     color: white;
     font-size:30px ;
-    text-shadow: 0 5px black, 0 2px 3px black;    
+    /* text-shadow: 0 5px black, 0 2px 3px black;     */
 }
 .numbers:nth-child(1){
     transform: rotate(30deg);
@@ -143,7 +143,7 @@
 .seconds::after{
     content: "";
     width: 4px;
-    height: 100px;
+    height: 130px;
     border-radius: 2px;
     background: rgb(234, 24, 94);
     position: absolute;
@@ -161,12 +161,12 @@
 .minutes::after{
     content: "";
     width: 8px;
-    height: 79px;
+    height: 90px;
     border-radius:4px 4px 2px 2px ;
     background-color: khaki;
     position: absolute;
-    left: calc(50% + 30px );
-    top: 23%;
+    left: calc(50% + 15px );
+    top: 36%;
     transform: rotate(-120deg);
     box-shadow: -1px 0 5px black;
 }
