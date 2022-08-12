@@ -1,6 +1,7 @@
-*{
+* , *::before,*::after{
     margin: 0;
-    padding:0;
+    padding:0;   
+   
 }
 .firstHeader{
     
@@ -10,34 +11,96 @@
     background-color:rgb(9, 116, 81);
 }
 .innerH1{
-    color: aliceblue;
+    color: rgb(218, 226, 234);
     text-shadow: 4px 4px black;
-    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    line-height:50px ;
+    width: 700px;
+    height: 50px;
     
 }
 
 .innerH1::before{
-    content: "";
+    content: '';
     position: absolute;
-    right: 145px;
-    top: 0;
-    width: 70%;
-    height: 40px;
-    border-bottom:3px solid red transparent ;
-    border-left:3px solid red transparent;
-    transition: all .8s ease ;
+    right: -2px;
+    top: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+.innerH1:hover::before{
+    animation: animate 1s linear forwards;
+}
+@keyframes animate{
+    0%{
+        width: 0;
+        height: 0;
+        border-top-color:whitesmoke ;
+        border-right-color:transparent;
+        border-bottom-color:transparent ;
+        border-left-color:transparent;
+    }
+    50%{
+        width: 100%;
+        height: 0;
+        border-top-color:whitesmoke ;
+        border-right-color:whitesmoke;
+        border-bottom-color:transparent ;
+        border-left-color:transparent;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        border-top-color:whitesmoke ;
+        border-right-color:whitesmoke;
+        border-bottom-color:transparent ;
+        border-left-color:transparent;
+    }
 }
 .innerH1::after{
-    content: "";
+    content: '';
     position: absolute;
-    right: 145px;
-    top: 0;
-    width: 70%;
-    height: 40px;
-    border-top:3px solid red transparent ;
-    border-right:3px solid red transparent ;
-    transition: all .8s ease
+    right: -2px;
+    top: -2px;
+    width: 0;
+    height: 0;
+    border: 2px solid transparent;
 }
+.innerH1:hover::after{
+    animation: animate2 1s linear forwards;
+}
+@keyframes animate2{
+    0%{
+        width: 0;
+        height: 0;
+        border-top-color:transparent ;
+        border-right-color:transparent;
+        border-left-color:transparent;
+        border-bottom-color:whitesmoke;
+    }
+    50%{
+        width: 100%;
+        height: 0;
+        border-top-color:transparent ;
+        border-right-color:transparent;
+        border-left-color:whitesmoke ;
+        border-bottom-color:whitesmoke;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        border-top-color:transparent ;
+        border-right-color:transparent;
+        border-left-color:whitesmoke ;
+        border-bottom-color:whitesmoke;
+    }
+}
+
+
 .div1{
     height: 100vh;
     width: 100%;
