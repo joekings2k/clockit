@@ -1,7 +1,6 @@
 * , *::before,*::after{
     margin: 0;
-    padding:0;   
-   
+    padding:0;      
 }
 .firstHeader{
     
@@ -98,6 +97,7 @@
         border-left-color:whitesmoke ;
         border-bottom-color:whitesmoke;
     }
+
 }
 
 
